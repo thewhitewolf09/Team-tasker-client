@@ -2,7 +2,7 @@ import axios from 'axios'
 import { BaseUrl } from './URL'
 
 const axiosInstance = axios.create({
-	baseURL: BaseUrl().localApi,
+	baseURL: BaseUrl().devApi,
 })
 
 axiosInstance.defaults.headers.common.accept = '*/*'
